@@ -1,0 +1,56 @@
+.card {
+  margin-top: 50px;
+  border: 1px solid grey;
+  border-radius: 8px;
+  width: 300px;
+}
+
+p.price {
+  color: #4f39f6;
+  font-weight: 700;
+}
+
+.add_cart {
+  height: 30px;
+  width: 91px;
+  color: #4f39f6;
+  background-color: #4f39f624;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.products {
+  display: flex;
+  width: 70%;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+div.cartHeading {
+  padding: 20px;
+  background-color: rgb(230, 225, 225);
+  width: 300px;
+  height: 500px;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  display: flex;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity {
+  font-size: 18px;
+  font-weight: 800;
+}
