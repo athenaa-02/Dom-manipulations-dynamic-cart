@@ -54,7 +54,7 @@ products.forEach((element) => {
   // productsElement.append(card)
 
   productsElement.innerHTML += `
-          <div class="card">
+          <div class="card" name='${element.laptop}'>
               <h3>მოდელი: ${element.laptop}</h3>
                <p class="price">${element.price} ლარი</p>
 <p class="year">${element.year} წლის მოდელი</p>
@@ -67,15 +67,17 @@ const cards = document.querySelectorAll(".card");
 
 cards.forEach((card) => {
   card.addEventListener("click", (e) => {
-    let chosen = e.target.textContent;
-    addToCart(chosen);
+  
+    const productName = card.getAttribute('name')
+
+  
+    addToCart(productName);
   });
 });
 
 let cartProducts = [];
 
 function addToCart(product) {
-  // console.log(product)
   cartProducts.push(product);
   render();
 }
